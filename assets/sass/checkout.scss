@@ -1,0 +1,21 @@
+@import 'reset';
+
+.cart-items {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  th {
+    text-align: center;
+  }
+
+  td {
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

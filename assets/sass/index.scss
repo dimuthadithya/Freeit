@@ -1,0 +1,96 @@
+@import 'reset';
+
+.hero {
+  font-family: $font-rob;
+  max-width: 1200px;
+
+  .card {
+    position: relative;
+
+    .item-actions {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right: 10px;
+      top: 10px;
+      gap: 10px;
+      opacity: 0;
+      transition: opacity 0.9s ease-in-out;
+
+      button {
+        display: block;
+        background-color: #0000009a;
+        border: 0;
+        height: 40px;
+
+        &:hover {
+          i {
+            color: pink;
+          }
+        }
+
+        i {
+          color: #fff;
+          transition: color 0.3s ease-in-out;
+        }
+      }
+    }
+
+    &:hover {
+      .add-to-cart-div {
+        opacity: 1;
+      }
+
+      .item-actions {
+        opacity: 1;
+      }
+    }
+  }
+
+  .card-body {
+    position: relative;
+  }
+
+  .add-to-cart-div {
+    position: absolute;
+    width: 100%;
+    top: -40px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    button {
+      border-radius: 0;
+    }
+  }
+
+  .card {
+    p {
+      margin: 0;
+    }
+
+    .rating {
+      i {
+        color: #f1c40f;
+        font-size: 15px;
+      }
+    }
+
+    .price {
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .card-body {
+      .card-text {
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        font-size: 20px;
+      }
+    }
+  }
+}

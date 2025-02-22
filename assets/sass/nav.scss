@@ -1,0 +1,29 @@
+@import './reset';
+
+nav {
+  .navbar-brand {
+    font-weight: 800;
+    font-size: 28px;
+  }
+
+  .cart {
+    position: relative;
+    padding: 10px;
+
+    #count {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
+  ul {
+    font-weight: 600;
+  }
+
+  .btn-div {
+    .talk-btn {
+      border-radius: 0;
+      background-color: $color1;
+    }
+  }
+}
