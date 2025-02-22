@@ -1,0 +1,42 @@
+.product-details {
+  flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .product-img {
+    flex: 1;
+    min-width: 370px;
+
+    > img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .img-slider {
+      height: 80px;
+      width: 80%;
+
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .product-des {
+    flex: 1;
+    min-width: 400px;
+
+    .rating {
+      color: #f8b739;
+    }
+  }
+
+  .actions {
+    .text-white {
+      background-color: #6569f3;
+    }
+  }
+}
